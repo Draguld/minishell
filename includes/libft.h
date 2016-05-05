@@ -38,11 +38,15 @@
 
 # define ENDL ft_endl()
 
-//NEW-FUNCTION//
+//--MINISHELL--//
 
+char	**ft_arraydup(char **array);
 char	*ft_strapp(char *s, char c);
+char	*ft_strconcat(const char *s1, const char *s2);
+int		ft_getaccess(char **path, char *cmd);
+char	*ft_getstrenv(char **environ, char *str);
 
-//------------//
+//-------------//
 
 typedef struct		s_list
 {

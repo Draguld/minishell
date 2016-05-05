@@ -14,6 +14,10 @@ $(NAME):
 	$(CC) $(CFLAGS) -c $(SRC) $(HEADER)
 	$(CC) $(CFLAGS) $(OBJ) libft.a -o $(NAME) $(HEADER)
 
+DEBUG:
+	$(CC) -g $(CFLAGS) -c $(SRC) $(HEADER)
+	$(CC) -g $(CFLAGS) $(OBJ) libft.a -o $(NAME) $(HEADER)
+
 all: $(NAME)
 
 nflag:
